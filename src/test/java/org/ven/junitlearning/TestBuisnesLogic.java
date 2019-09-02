@@ -14,7 +14,7 @@ import java.util.Collection;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @DisplayNameGeneration(DisplayNameGenerator.Standard.class)
 
-public class BusinessLogicTests {
+public class TestBuisnesLogic {
 
     BusinessLogic bl;
     @BeforeEach
@@ -77,7 +77,7 @@ public class BusinessLogicTests {
         String str = null;
         Assertions.assertThrows(NullPointerException.class,
                 () ->{
-            str.length();
+                    str.length();
                 });
     }
 
@@ -114,9 +114,9 @@ public class BusinessLogicTests {
     void testPerf()
     {
         Assertions.assertTimeout(Duration.ofSeconds(10l),
-        () -> {
-            Thread.sleep(11);
-        }
+                () -> {
+                    Thread.sleep(11);
+                }
         );
     }
 
