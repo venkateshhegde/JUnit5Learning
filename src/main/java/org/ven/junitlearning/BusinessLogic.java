@@ -11,4 +11,9 @@ public class BusinessLogic {
         return ret;
     }
 
+    public static void main(String[] args) {
+        BusinessLogic bl = new BusinessLogic();
+        System.out.println(bl.add(12, 23));
+    }
+
 }
