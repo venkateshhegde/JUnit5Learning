@@ -140,12 +140,12 @@
         <repository>
             <id>central</id>
             <name>ven-Inspiron-7390-2n1-releases</name>
-            <url>http://localhost:8081/artifactory/VenKey</url>
+            <url>http://10.0.0.39:8081/artifactory/VenKey</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>ven-Inspiron-7390-2n1-snapshots</name>
-            <url>http://localhost:8081/artifactory/VenKey</url>
+            <url>http://10.0.0.39:8081/artifactory/VenKey</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
