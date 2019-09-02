@@ -36,8 +36,9 @@ public class TestBusinessLogic {
     @Test
     @DisplayName("A + B negative  case ")
     @Order(2)
-    public void testAPlusBNegative()
+    public void testAPlusBNegative(TestReporter tr)
     {
+        tr.publishEntry("HELLO: Test Running... A Plus B Negative");
         System.out.println(bl.hashCode());
         Assertions.assertEquals(5, bl.add(7,-2));
     }
@@ -140,6 +141,14 @@ public class TestBusinessLogic {
             );
         }
 
+    }
+
+
+    @Test
+    void testOnlyOnDeveloperWorkstation() {
+        Assumptions.assumeTrue("DEV".equals(System.getenv("ENV")),
+                () -> "Aborting test: not on developer workstation");
+        // remainder of test
     }
 
 
