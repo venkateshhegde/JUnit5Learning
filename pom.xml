@@ -148,4 +148,7 @@
             <url>http://10.0.0.39:8081/artifactory/VenKey</url>
         </snapshotRepository>
     </distributionManagement>
+    <!--
+    Docker jenkins needs the settings file manually installed..
+    -->
 </project>
