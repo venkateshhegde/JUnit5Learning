@@ -12,8 +12,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@DisplayNameGeneration(DisplayNameGenerator.Standard.class)
-
+@DisplayName("MAIN")
 public class BusinessLogicTests {
 
     BusinessLogic bl;

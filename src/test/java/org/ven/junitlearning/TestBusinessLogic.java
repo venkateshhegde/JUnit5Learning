@@ -14,7 +14,7 @@ import java.util.Collection;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @DisplayNameGeneration(DisplayNameGenerator.Standard.class)
 
-public class TestBuisnesLogic {
+public class TestBusinessLogic {
 
     BusinessLogic bl;
     @BeforeEach
