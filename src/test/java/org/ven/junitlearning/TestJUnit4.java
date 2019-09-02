@@ -3,7 +3,7 @@ package org.ven.junitlearning;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class JUnit4Tests {
+public class TestJUnit4 {
 
     @Test
     public void testWillBeExecuted() {
