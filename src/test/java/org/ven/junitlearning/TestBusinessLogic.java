@@ -61,6 +61,16 @@ public class TestBusinessLogic {
         Assertions.assertArrayEquals(new int[]{10, 20}, bl.add(new int[]{1,9},new int[]{9, 11}));
     }
 
+    @Test
+    @DisplayName("main call")
+    @Order(4)
+    public void testMain()
+    {
+        System.out.println(bl.hashCode());
+         BusinessLogic.main(new String[]{"1", "2"});
+         Assertions.assertEquals(true, true);
+    }
+
     @BeforeAll
     public static  void  before()
     {
