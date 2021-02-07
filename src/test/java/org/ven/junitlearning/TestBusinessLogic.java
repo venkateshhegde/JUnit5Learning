@@ -21,7 +21,7 @@ public class TestBusinessLogic {
     public void setup()
     {
         bl = new BusinessLogic();
-        System.out.println("Buisness Object initialized" + bl.hashCode());
+        System.out.println("Business Object initialized  " + bl.hashCode());
     }
 
     @Test
