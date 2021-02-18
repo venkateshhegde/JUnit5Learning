@@ -139,6 +139,22 @@ public class BusinessLogicTests {
             );
         }
 
+        @Nested
+        @DisplayName("Inner INNER Ones...")
+
+        class InnerInner{
+            @Test
+            @DisplayName("A + B negative  case INNER INNER ")
+            public void testAPlusBNegative()
+            {
+                System.out.println(bl.hashCode());
+                Assertions.assertEquals(5, bl.add(7,-2));
+            }
+
+
+
+        }
+
     }
 
 
